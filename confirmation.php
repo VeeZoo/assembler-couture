@@ -158,12 +158,13 @@ td {
 		//Set up variables used by cart
 		$totalcost = 0.00;
 		
-		//Connect to DB
-		require ("../../comp199login.php");
+		// Connect to DB
+		// Use your own MySQL login in a separate file
+		require ("../../login.php");
 		if (!$LinkID) {
 			die('Could not connect: ' . mysql_error());
 		}
-		mysql_select_db("c199grp05", $LinkID);
+		mysql_select_db("mydatabase", $LinkID);
 		
 		echo 	"<h2 style='color:black;'> YOUR ORDER </h2>
 				<table>

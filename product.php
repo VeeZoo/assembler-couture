@@ -12,8 +12,7 @@ if(isset($_SESSION['cart'])) {
 <html>
 <!-- 
 	"Assembler Couture"
-	CST COMP199 Q3 2014
-	Luke Booth, Matthew Marzitelli, Victoria Zou
+	L. Booth, M. Marzitelli, V. Zou
 -->
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -129,7 +128,8 @@ if(isset($_SESSION['cart'])) {
 				$prodcode = $_GET['id'];
 
 				// Connect to the MySQL server using linked login/pw
-					require ("../../comp199login.php");
+				// Use your own MySQL login in a separate file
+					require ("../../login.php");
 					
 				// Error if cannot connect
 					if (!$LinkID) {
@@ -137,7 +137,7 @@ if(isset($_SESSION['cart'])) {
 					}
 
 				// Choose the database
-					mysql_select_db("c199grp05", $LinkID);
+					mysql_select_db("mydatabase", $LinkID); // choose database
 					
 				// Query DB for product info
 						$result1 = mysql_query("

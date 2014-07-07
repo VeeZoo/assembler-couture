@@ -1,7 +1,7 @@
 /******************************************************************
 *     Validate Form / Disable Shipping - JavaScript Functions	  *
 *                                                                 *
-*     Author:  Luke Booth & Victoria Zou                  		  *
+*     Author:  L.Booth & V. Zou                  		  *
 *******************************************************************/
 
 function validateForm() {

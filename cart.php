@@ -159,11 +159,11 @@ form {
 		$totalcost = 0.00;
 		
 		//Connect to DB
-		require ("../../comp199login.php");
+		require ("../../login.php"); // Use your own MySQL login in a separate file
 		if (!$LinkID) {
 			die('Could not connect: ' . mysql_error());
 		}
-		mysql_select_db("c199grp05", $LinkID);
+		mysql_select_db("mydatabase", $LinkID);
 		
 		//Open cart form
 		echo "<form method='post' action='cart.php'>";

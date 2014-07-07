@@ -7,7 +7,8 @@
 	}
 
 // Connect to the MySQL server using linked login/pw
-	require ("../../comp199login.php");
+// Use your own MySQL login in a separate file
+	require ("../../login.php");
 	
 // Error if cannot connect
 	if (!$LinkID) {
@@ -15,7 +16,7 @@
 	}
 
 // Choose the database
-	mysql_select_db("c199grp05", $LinkID);
+	mysql_select_db("mydatabase", $LinkID);
 	
 // Run the first query
 	$result1 = mysql_query("

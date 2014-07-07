@@ -1,7 +1,7 @@
 /******************************************************************
 *     Add Product to Cart - JavaScript Functions			      *
 *                                                                 *
-*     Author:  Victoria Zou                   					  *
+*     Author:  V. Zou                   					  *
 *******************************************************************/
 
 /* This function defines the required event listeners for the

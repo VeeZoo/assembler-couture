@@ -27,7 +27,8 @@
 	$delete = "DELETE FROM fashion_products WHERE product_id LIKE '".$prodId."_';";
 
 // Connect to the MySQL server using linked login/pw
-	require ("../../comp199login.php");
+// Use your own MySQL login in a separate file
+	require ("../../login.php");
 	
 // Error if cannot connect
 	if (!$LinkID) {
@@ -35,7 +36,7 @@
 	}
 
 // Choose the database
-	mysql_select_db("c199grp05", $LinkID);
+	mysql_select_db("mydatabase", $LinkID);
 
 // Delete row with user-generated query
 	$ret1 = mysql_query($delete, $LinkID);

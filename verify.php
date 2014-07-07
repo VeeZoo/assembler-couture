@@ -1,6 +1,6 @@
 <?php
-$usernames = array("luke", "matthew", "victoria");
-$passwords = array("teamrocket", "teamrocket", "teamrocket");
+$usernames = array("username");
+$passwords = array("password");
 $page = "admin.php";
 $usernameAttempt = htmlspecialchars(strip_tags(trim($_POST["username"])), ENT_QUOTES);
 $passwordAttempt = htmlspecialchars(strip_tags(trim($_POST["password"])), ENT_QUOTES);

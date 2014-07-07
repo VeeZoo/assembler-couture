@@ -133,16 +133,16 @@ table,th,td {
 	}
 	
 	// EDIT THE 2 LINES BELOW AS REQUIRED
-	$email_self ="addictedtocurry@hotmail.com";
+	$email_self ="some-email@internet.com";
 	$email_subject = "Assembler Couture: Order Receipt";
 	 
-	 //extracting variables from session
+	 // extracting variables from session
 
-	require ("../../comp199login.php");
+	require ("../../login.php"); // use your own MySQL login in a separate file
 	if (!$LinkID) {
 		die('Could not connect: ' . mysql_error());
 	}
-	mysql_select_db("c199grp05", $LinkID);
+	mysql_select_db("mydatabase", $LinkID); // choose database
 	
 	$shipName = $_SESSION['pinfo'][1];
 	$shipAddress = $_SESSION['pinfo'][2];

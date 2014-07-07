@@ -6,7 +6,6 @@ if(isset($_SESSION['cart'])) {
 		$cartNum += $v;
 	}
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -172,7 +171,6 @@ if(isset($_SESSION['cart'])) {
 			<a id="gotop" href="#top"><img src="images/backtotop.png" alt="go to top"></a>
 			<!--footer start -->
 
-			<!-- made this for potential bonus marks??????-->
 			<div id="social">
 
 				<div class="social-networks"> 
